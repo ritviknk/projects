@@ -1,2 +1,2 @@
 # worksample
-Sample RTL design projects for showcasing design skills, verilog language expertise, coding guidelines and philosophy.
+RTL design projects to showcase design skills, verilog language expertise, coding guidelines and philosophy.
