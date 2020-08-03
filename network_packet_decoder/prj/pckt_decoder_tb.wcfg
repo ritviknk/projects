@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="../logs/pckt_decoder_top_tb.wdb" id="1">
+         <top_modules>
+            <top_module name="pckt_decoder_top_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="144945fs"></ZoomEndTime>
+      <Cursor1Time time="85000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="212"></NameColumnWidth>
+      <ValueColumnWidth column_width="157"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="54" />
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/i">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pckt_decoder_top_tb/dut/read_en">
+      <obj_property name="ElementShortName">read_en</obj_property>
+      <obj_property name="ObjectShortName">read_en</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pckt_decoder_top_tb/dut/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pckt_decoder_top_tb/dut/rstb">
+      <obj_property name="ElementShortName">rstb</obj_property>
+      <obj_property name="ObjectShortName">rstb</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pckt_decoder_top_tb/dut/fifo_empty">
+      <obj_property name="ElementShortName">fifo_empty</obj_property>
+      <obj_property name="ObjectShortName">fifo_empty</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pckt_decoder_top_tb/dut/read_data_valid">
+      <obj_property name="ElementShortName">read_data_valid</obj_property>
+      <obj_property name="ObjectShortName">read_data_valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pckt_decoder_top_tb/dut/in_sop">
+      <obj_property name="ElementShortName">in_sop</obj_property>
+      <obj_property name="ObjectShortName">in_sop</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pckt_decoder_top_tb/dut/in_eop">
+      <obj_property name="ElementShortName">in_eop</obj_property>
+      <obj_property name="ObjectShortName">in_eop</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pckt_decoder_top_tb/dut/in_error">
+      <obj_property name="ElementShortName">in_error</obj_property>
+      <obj_property name="ObjectShortName">in_error</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/in_empty">
+      <obj_property name="ElementShortName">in_empty[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_empty[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pckt_decoder_top_tb/dut/upd_mc">
+      <obj_property name="ElementShortName">upd_mc</obj_property>
+      <obj_property name="ObjectShortName">upd_mc</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/msg_cnt">
+      <obj_property name="ElementShortName">msg_cnt[15:0]</obj_property>
+      <obj_property name="ObjectShortName">msg_cnt[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/nx_msg_cnt">
+      <obj_property name="ElementShortName">nx_msg_cnt[15:0]</obj_property>
+      <obj_property name="ObjectShortName">nx_msg_cnt[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/upd_ml">
+      <obj_property name="ElementShortName">upd_ml[1:0]</obj_property>
+      <obj_property name="ObjectShortName">upd_ml[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/msg_len">
+      <obj_property name="ElementShortName">msg_len[15:0]</obj_property>
+      <obj_property name="ObjectShortName">msg_len[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/nx_msg_len">
+      <obj_property name="ElementShortName">nx_msg_len[15:0]</obj_property>
+      <obj_property name="ObjectShortName">nx_msg_len[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/ml_st">
+      <obj_property name="ElementShortName">ml_st[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ml_st[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/ml_end">
+      <obj_property name="ElementShortName">ml_end[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ml_end[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pckt_decoder_top_tb/dut/upd_len">
+      <obj_property name="ElementShortName">upd_len</obj_property>
+      <obj_property name="ObjectShortName">upd_len</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/cur_len">
+      <obj_property name="ElementShortName">cur_len[15:0]</obj_property>
+      <obj_property name="ObjectShortName">cur_len[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/p_st">
+      <obj_property name="ElementShortName">p_st[2:0]</obj_property>
+      <obj_property name="ObjectShortName">p_st[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/p_end">
+      <obj_property name="ElementShortName">p_end[2:0]</obj_property>
+      <obj_property name="ObjectShortName">p_end[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/nx_state">
+      <obj_property name="ElementShortName">nx_state[9:0]</obj_property>
+      <obj_property name="ObjectShortName">nx_state[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/state">
+      <obj_property name="ElementShortName">state[9:0]</obj_property>
+      <obj_property name="ObjectShortName">state[9:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/state_ascii">
+      <obj_property name="ElementShortName">state_ascii[79:0]</obj_property>
+      <obj_property name="ObjectShortName">state_ascii[79:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pckt_decoder_top_tb/dut/msg_len_gt8">
+      <obj_property name="ElementShortName">msg_len_gt8</obj_property>
+      <obj_property name="ObjectShortName">msg_len_gt8</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pckt_decoder_top_tb/dut/msg_len_7">
+      <obj_property name="ElementShortName">msg_len_7</obj_property>
+      <obj_property name="ObjectShortName">msg_len_7</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pckt_decoder_top_tb/dut/msg_len_6">
+      <obj_property name="ElementShortName">msg_len_6</obj_property>
+      <obj_property name="ObjectShortName">msg_len_6</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pckt_decoder_top_tb/dut/msg_len_8">
+      <obj_property name="ElementShortName">msg_len_8</obj_property>
+      <obj_property name="ObjectShortName">msg_len_8</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pckt_decoder_top_tb/dut/msg_len_lt6">
+      <obj_property name="ElementShortName">msg_len_lt6</obj_property>
+      <obj_property name="ObjectShortName">msg_len_lt6</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pckt_decoder_top_tb/dut/msg_len_0">
+      <obj_property name="ElementShortName">msg_len_0</obj_property>
+      <obj_property name="ObjectShortName">msg_len_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pckt_decoder_top_tb/dut/idle">
+      <obj_property name="ElementShortName">idle</obj_property>
+      <obj_property name="ObjectShortName">idle</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pckt_decoder_top_tb/dut/msg_end">
+      <obj_property name="ElementShortName">msg_end</obj_property>
+      <obj_property name="ObjectShortName">msg_end</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pckt_decoder_top_tb/dut/msg_end_p1">
+      <obj_property name="ElementShortName">msg_end_p1</obj_property>
+      <obj_property name="ObjectShortName">msg_end_p1</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pckt_decoder_top_tb/dut/data_valid_p1">
+      <obj_property name="ElementShortName">data_valid_p1</obj_property>
+      <obj_property name="ObjectShortName">data_valid_p1</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/in_data">
+      <obj_property name="ElementShortName">in_data[7:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_data[7:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/data_p1">
+      <obj_property name="ElementShortName">data_p1[7:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_p1[7:0][7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/byte_enable_p1">
+      <obj_property name="ElementShortName">byte_enable_p1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">byte_enable_p1[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/packed_data">
+      <obj_property name="ElementShortName">packed_data[23:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">packed_data[23:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/packed_bytemask">
+      <obj_property name="ElementShortName">packed_bytemask[23:0]</obj_property>
+      <obj_property name="ObjectShortName">packed_bytemask[23:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pckt_decoder_top_tb/dut/msg_end_p0">
+      <obj_property name="ElementShortName">msg_end_p0</obj_property>
+      <obj_property name="ObjectShortName">msg_end_p0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pckt_decoder_top_tb/dut/spill_valid_int">
+      <obj_property name="ElementShortName">spill_valid_int</obj_property>
+      <obj_property name="ObjectShortName">spill_valid_int</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pckt_decoder_top_tb/dut/spill_valid">
+      <obj_property name="ElementShortName">spill_valid</obj_property>
+      <obj_property name="ObjectShortName">spill_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/spill_data">
+      <obj_property name="ElementShortName">spill_data[7:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">spill_data[7:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/spill_bytemask">
+      <obj_property name="ElementShortName">spill_bytemask[7:0]</obj_property>
+      <obj_property name="ObjectShortName">spill_bytemask[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/nx_spill_count">
+      <obj_property name="ElementShortName">nx_spill_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">nx_spill_count[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/spill_count">
+      <obj_property name="ElementShortName">spill_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">spill_count[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/byte_count_p1">
+      <obj_property name="ElementShortName">byte_count_p1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">byte_count_p1[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/acc_cnt">
+      <obj_property name="ElementShortName">acc_cnt[4:0]</obj_property>
+      <obj_property name="ObjectShortName">acc_cnt[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/acc_idx">
+      <obj_property name="ElementShortName">acc_idx[4:0]</obj_property>
+      <obj_property name="ObjectShortName">acc_idx[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pckt_decoder_top_tb/dut/out_valid_int">
+      <obj_property name="ElementShortName">out_valid_int</obj_property>
+      <obj_property name="ObjectShortName">out_valid_int</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/pckt_decoder_top_tb/dut/out_valid">
+      <obj_property name="ElementShortName">out_valid</obj_property>
+      <obj_property name="ObjectShortName">out_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/out_data">
+      <obj_property name="ElementShortName">out_data[15:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_data[15:0][7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/pckt_decoder_top_tb/dut/out_bytemask">
+      <obj_property name="ElementShortName">out_bytemask[15:0]</obj_property>
+      <obj_property name="ObjectShortName">out_bytemask[15:0]</obj_property>
+   </wvobject>
+</wave_config>
