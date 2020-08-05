@@ -62,7 +62,8 @@ Network Packet Decoder(Message Extractor):
   Input data setup latency  : 1 clock to setup input data stream with proper byte_enables prior to writing to FIFO. 
                               This serves as one pipeline stage to meet timing.
   FIFO latency              : 1 clock to write, 1 clock to read, total 2 clocks of latency.
+                            : With pre-fetch buffer, latency reduces to 1 clock.
   Extractor latency         : FSM and the output buffer/accmulator have a total of 2 pipeline stages. 
                               So, 2 clocks latency.
-  Total system latency      : 5 clocks latency, from first data at input and first output data in the output buffer. 
+  Total system latency      : 4 clocks latency, from first data at input and first output data in the output buffer. 
   </pre>
