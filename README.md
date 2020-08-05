@@ -2,7 +2,8 @@
 RTL design projects to showcase design skills, verilog language expertise and coding styles.
 <pre>
 1. Network Packet Decoder(Message Extractor):
-   Problem statement : Design a verilog module to extract message payloads from a continuous stream of packets
+   Problem statement : Design a verilog module to extract message payloads from a continuous 
+                       stream of packets
    Pipelined design module reads input packet data from a FIFO and extracts messaged with variable lengths.
    Incorporates SRAM-based FIFO with pre-fetch buffer for packet storage.
 </pre>
