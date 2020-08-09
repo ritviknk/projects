@@ -7,7 +7,7 @@ RTL design projects to showcase design skills, verilog language expertise and co
    Design: FSM, Pipeline, FIFO
    - FSM based control path to read input packet data from a FIFO and output the message payload 
      and byte-enables.
-   - Pipelined data and control path to produce througuput of 1 full message on every clock.
+   - Pipelined data and control path to produce throughput of 1 full message on every clock.
    - Incorporates FIFO with pre-fetch buffer for packet storage.
 </pre>
    
