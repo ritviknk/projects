@@ -1,10 +1,13 @@
 # worksample
 RTL design projects to showcase design skills, verilog language expertise and coding styles.
+
 <pre>
 1. Network Packet Decoder(Message Extractor):
+</pre>
+https://github.com/ritviknk/worksample/tree/master/network_packet_decoder/Docs
+<pre>
    Problem statement : Design a verilog module to extract message payloads with variable lengths 
-                       from a continuous stream of packets.
-   https://github.com/ritviknk/worksample/tree/master/network_packet_decoder/Docs
+                       from a continuous stream of packets. 
    Design: FSM, Pipeline, FIFO
    - FSM based control path to read input packet data from a FIFO and output the message payload 
      and byte-enables.
@@ -14,8 +17,10 @@ RTL design projects to showcase design skills, verilog language expertise and co
    
 <pre>
 2. FIFO:
+</pre>
+https://github.com/ritviknk/worksample/tree/master/fifo_sram/Docs
+<pre>
    Problem statement : Design a FIFO with pre-fetch buffer using SRAM model.
-   https://github.com/ritviknk/worksample/tree/master/fifo_sram/Docs
    Design: FSM, Synchronous FIFO
    - Synchronous FIFO controller with Full and Empty status bits, with protection to block writes 
      and reads when Full and Empty are active.
