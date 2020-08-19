@@ -180,23 +180,14 @@ State outputs:
           end
         end
       endcase
-
-/*  
-      case(nx_pf_state)
-        PF_EMPTY    : pre_fetch <= 0; 
-        PF_PREFETCH : pre_fetch <= ~pre_fetch_rdy | rd_en;
-        PF_FLOW     : pre_fetch <= rd_en; 
-        PF_FLUSH    : pre_fetch <= 0;
-      endcase
-*/
     end
 
   always_comb
     case(nx_pf_state)
-      PF_EMPTY    : pre_fetch <= pre_empty; 
-      PF_PREFETCH : pre_fetch <= ~pre_fetch_rdy | rd_en;
-      PF_FLOW     : pre_fetch <= rd_en; 
-      PF_FLUSH    : pre_fetch <= 0;
+      PF_EMPTY    : pre_fetch = pre_empty; 
+      PF_PREFETCH : pre_fetch = ~pre_fetch_rdy | rd_en;
+      PF_FLOW     : pre_fetch = rd_en; 
+      PF_FLUSH    : pre_fetch = 0;
     endcase
 
   // state transition
@@ -258,7 +249,7 @@ State outputs:
 if (PIPELINED_READ==1) begin
     // read data out after prefetch
   always_ff @(posedge rd_clk or negedge rd_rstb)
-          if (~rd_rstb)               rd_data <= 0;
+          if (~rd_rstb)       rd_data <= 0;
     else  if (pre_fetch_rdy)  rd_data <= pre_data;
 end
 
