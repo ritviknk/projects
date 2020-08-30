@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="../logs/bitonic_sort_tb.wdb" id="1">
+         <top_modules>
+            <top_module name="bitonic_sort_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="520706fs"></ZoomEndTime>
+      <Cursor1Time time="265000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="218"></NameColumnWidth>
+      <ValueColumnWidth column_width="181"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="3" />
+   <wvobject type="group" fp_name="group38">
+      <obj_property name="label">TB</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/rstb">
+         <obj_property name="ElementShortName">rstb</obj_property>
+         <obj_property name="ObjectShortName">rstb</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/unsorted_in">
+         <obj_property name="ElementShortName">unsorted_in[3:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">unsorted_in[3:0][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/read_valid_in">
+         <obj_property name="ElementShortName">read_valid_in</obj_property>
+         <obj_property name="ObjectShortName">read_valid_in</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/sort_req_in">
+         <obj_property name="ElementShortName">sort_req_in</obj_property>
+         <obj_property name="ObjectShortName">sort_req_in</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/start_addr_in">
+         <obj_property name="ElementShortName">start_addr_in[2:0]</obj_property>
+         <obj_property name="ObjectShortName">start_addr_in[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/data_count_in">
+         <obj_property name="ElementShortName">data_count_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_count_in[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/read_addr_out">
+         <obj_property name="ElementShortName">read_addr_out[2:0]</obj_property>
+         <obj_property name="ObjectShortName">read_addr_out[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/read_en_out">
+         <obj_property name="ElementShortName">read_en_out</obj_property>
+         <obj_property name="ObjectShortName">read_en_out</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/sort_valid_out">
+         <obj_property name="ElementShortName">sort_valid_out</obj_property>
+         <obj_property name="ObjectShortName">sort_valid_out</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/sort_active_out">
+         <obj_property name="ElementShortName">sort_active_out</obj_property>
+         <obj_property name="ObjectShortName">sort_active_out</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorted_out">
+         <obj_property name="ElementShortName">sorted_out[3:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">sorted_out[3:0][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorted_addr_out">
+         <obj_property name="ElementShortName">sorted_addr_out[2:0]</obj_property>
+         <obj_property name="ObjectShortName">sorted_addr_out[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/clk_tb">
+         <obj_property name="ElementShortName">clk_tb</obj_property>
+         <obj_property name="ObjectShortName">clk_tb</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/write_en_tb">
+         <obj_property name="ElementShortName">write_en_tb</obj_property>
+         <obj_property name="ObjectShortName">write_en_tb</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/write_data_tb">
+         <obj_property name="ElementShortName">write_data_tb[3:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">write_data_tb[3:0][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/write_addr_tb">
+         <obj_property name="ElementShortName">write_addr_tb[2:0]</obj_property>
+         <obj_property name="ObjectShortName">write_addr_tb[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/write_en">
+         <obj_property name="ElementShortName">write_en</obj_property>
+         <obj_property name="ObjectShortName">write_en</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/write_data">
+         <obj_property name="ElementShortName">write_data[3:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">write_data[3:0][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/write_addr">
+         <obj_property name="ElementShortName">write_addr[2:0]</obj_property>
+         <obj_property name="ObjectShortName">write_addr[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/raw_data">
+         <obj_property name="ElementShortName">raw_data[0:4][3:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">raw_data[0:4][3:0][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/write_sel">
+         <obj_property name="ElementShortName">write_sel</obj_property>
+         <obj_property name="ObjectShortName">write_sel</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/cnt">
+         <obj_property name="ElementShortName">cnt[31:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sram_clks">
+         <obj_property name="ElementShortName">sram_clks[0:1]</obj_property>
+         <obj_property name="ObjectShortName">sram_clks[0:1]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sram_rstb">
+         <obj_property name="ElementShortName">sram_rstb[0:1]</obj_property>
+         <obj_property name="ObjectShortName">sram_rstb[0:1]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sram_ce_b">
+         <obj_property name="ElementShortName">sram_ce_b[0:1]</obj_property>
+         <obj_property name="ObjectShortName">sram_ce_b[0:1]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sram_we_b">
+         <obj_property name="ElementShortName">sram_we_b[0:1]</obj_property>
+         <obj_property name="ObjectShortName">sram_we_b[0:1]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sram_data_in">
+         <obj_property name="ElementShortName">sram_data_in[0:1][31:0]</obj_property>
+         <obj_property name="ObjectShortName">sram_data_in[0:1][31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sram_addr_in">
+         <obj_property name="ElementShortName">sram_addr_in[0:1][2:0]</obj_property>
+         <obj_property name="ObjectShortName">sram_addr_in[0:1][2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sram_data_out">
+         <obj_property name="ElementShortName">sram_data_out[0:1][31:0]</obj_property>
+         <obj_property name="ObjectShortName">sram_data_out[0:1][31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/WIDTH_TB">
+         <obj_property name="ElementShortName">WIDTH_TB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WIDTH_TB[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/BITS_TB">
+         <obj_property name="ElementShortName">BITS_TB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BITS_TB[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/TYPE_TB">
+         <obj_property name="ElementShortName">TYPE_TB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">TYPE_TB[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/WIDTH_SRAM">
+         <obj_property name="ElementShortName">WIDTH_SRAM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WIDTH_SRAM[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/DEPTH_SRAM">
+         <obj_property name="ElementShortName">DEPTH_SRAM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DEPTH_SRAM[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/ADDR_TB">
+         <obj_property name="ElementShortName">ADDR_TB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADDR_TB[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/PORTS_TB">
+         <obj_property name="ElementShortName">PORTS_TB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PORTS_TB[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/DATA_CNT_TB">
+         <obj_property name="ElementShortName">DATA_CNT_TB[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DATA_CNT_TB[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group95">
+      <obj_property name="label">Sorter</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/sorter/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/sorter/rstb">
+         <obj_property name="ElementShortName">rstb</obj_property>
+         <obj_property name="ObjectShortName">rstb</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/sorter/sort_req">
+         <obj_property name="ElementShortName">sort_req</obj_property>
+         <obj_property name="ObjectShortName">sort_req</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/start_addr">
+         <obj_property name="ElementShortName">start_addr[2:0]</obj_property>
+         <obj_property name="ObjectShortName">start_addr[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/data_count">
+         <obj_property name="ElementShortName">data_count[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_count[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/sorter/sort_active">
+         <obj_property name="ElementShortName">sort_active</obj_property>
+         <obj_property name="ObjectShortName">sort_active</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/read_addr">
+         <obj_property name="ElementShortName">read_addr[2:0]</obj_property>
+         <obj_property name="ObjectShortName">read_addr[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/sorter/read_en">
+         <obj_property name="ElementShortName">read_en</obj_property>
+         <obj_property name="ObjectShortName">read_en</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/sorter/read_counter_active">
+         <obj_property name="ElementShortName">read_counter_active</obj_property>
+         <obj_property name="ObjectShortName">read_counter_active</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/read_counter">
+         <obj_property name="ElementShortName">read_counter[7:0]</obj_property>
+         <obj_property name="ObjectShortName">read_counter[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/stage">
+         <obj_property name="ElementShortName">stage[2:0]</obj_property>
+         <obj_property name="ObjectShortName">stage[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/end_cnt">
+         <obj_property name="ElementShortName">end_cnt[7:0]</obj_property>
+         <obj_property name="ObjectShortName">end_cnt[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/sorter/mux1_sel">
+         <obj_property name="ElementShortName">mux1_sel</obj_property>
+         <obj_property name="ObjectShortName">mux1_sel</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/sorter/mux2_sel">
+         <obj_property name="ElementShortName">mux2_sel</obj_property>
+         <obj_property name="ObjectShortName">mux2_sel</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/sorter/mux3_sel">
+         <obj_property name="ElementShortName">mux3_sel</obj_property>
+         <obj_property name="ObjectShortName">mux3_sel</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/sorter/byte_order_inv">
+         <obj_property name="ElementShortName">byte_order_inv</obj_property>
+         <obj_property name="ObjectShortName">byte_order_inv</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/sorter/read_valid">
+         <obj_property name="ElementShortName">read_valid</obj_property>
+         <obj_property name="ObjectShortName">read_valid</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/unsorted">
+         <obj_property name="ElementShortName">unsorted[3:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">unsorted[3:0][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/uns_s0">
+         <obj_property name="ElementShortName">uns_s0[3:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">uns_s0[3:0][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/uns_s1">
+         <obj_property name="ElementShortName">uns_s1[3:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">uns_s1[3:0][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/uns_s2">
+         <obj_property name="ElementShortName">uns_s2[3:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">uns_s2[3:0][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/sorter/sorter4_valid">
+         <obj_property name="ElementShortName">sorter4_valid</obj_property>
+         <obj_property name="ObjectShortName">sorter4_valid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/sorter/sort4_pr1_valid">
+         <obj_property name="ElementShortName">sort4_pr1_valid</obj_property>
+         <obj_property name="ObjectShortName">sort4_pr1_valid</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/sort4_pr1">
+         <obj_property name="ElementShortName">sort4_pr1[3:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">sort4_pr1[3:0][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/sorter/sort8_pr2_valid">
+         <obj_property name="ElementShortName">sort8_pr2_valid</obj_property>
+         <obj_property name="ObjectShortName">sort8_pr2_valid</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/sort8_pr2">
+         <obj_property name="ElementShortName">sort8_pr2[3:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">sort8_pr2[3:0][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/sorter/sorter8_valid">
+         <obj_property name="ElementShortName">sorter8_valid</obj_property>
+         <obj_property name="ObjectShortName">sorter8_valid</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/uns8_s2">
+         <obj_property name="ElementShortName">uns8_s2[7:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">uns8_s2[7:0][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/uns_s3">
+         <obj_property name="ElementShortName">uns_s3[7:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">uns_s3[7:0][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/uns_s4">
+         <obj_property name="ElementShortName">uns_s4[7:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">uns_s4[7:0][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/uns_s5">
+         <obj_property name="ElementShortName">uns_s5[7:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">uns_s5[7:0][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/sorter/sort_valid">
+         <obj_property name="ElementShortName">sort_valid</obj_property>
+         <obj_property name="ObjectShortName">sort_valid</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/sorted">
+         <obj_property name="ElementShortName">sorted[3:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">sorted[3:0][7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/sorted_addr">
+         <obj_property name="ElementShortName">sorted_addr[2:0]</obj_property>
+         <obj_property name="ObjectShortName">sorted_addr[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/CNT">
+         <obj_property name="ElementShortName">CNT[254:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">CNT[254:0][31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/b">
+         <obj_property name="ElementShortName">b[31:0]</obj_property>
+         <obj_property name="ObjectShortName">b[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/a0">
+         <obj_property name="ElementShortName">a0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">a0[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/d0">
+         <obj_property name="ElementShortName">d0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">d0[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/a1">
+         <obj_property name="ElementShortName">a1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">a1[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/d1">
+         <obj_property name="ElementShortName">d1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">d1[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/a2">
+         <obj_property name="ElementShortName">a2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">a2[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/d2">
+         <obj_property name="ElementShortName">d2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">d2[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/a3">
+         <obj_property name="ElementShortName">a3[31:0]</obj_property>
+         <obj_property name="ObjectShortName">a3[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/a4">
+         <obj_property name="ElementShortName">a4[31:0]</obj_property>
+         <obj_property name="ObjectShortName">a4[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/a5">
+         <obj_property name="ElementShortName">a5[31:0]</obj_property>
+         <obj_property name="ObjectShortName">a5[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/WIDTH">
+         <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/ADDR">
+         <obj_property name="ElementShortName">ADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/BITS">
+         <obj_property name="ElementShortName">BITS[31:0]</obj_property>
+         <obj_property name="ObjectShortName">BITS[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/MAXCNT">
+         <obj_property name="ElementShortName">MAXCNT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MAXCNT[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/TYPE">
+         <obj_property name="ElementShortName">TYPE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">TYPE[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/MAXRD">
+         <obj_property name="ElementShortName">MAXRD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MAXRD[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/sorter/MAXSTAGE">
+         <obj_property name="ElementShortName">MAXSTAGE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">MAXSTAGE[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group108">
+      <obj_property name="label">SRAM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/SRAM_MEM/clk">
+         <obj_property name="ElementShortName">clk[0:1]</obj_property>
+         <obj_property name="ObjectShortName">clk[0:1]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/SRAM_MEM/rstb">
+         <obj_property name="ElementShortName">rstb[0:1]</obj_property>
+         <obj_property name="ObjectShortName">rstb[0:1]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/SRAM_MEM/ce_b">
+         <obj_property name="ElementShortName">ce_b[0:1]</obj_property>
+         <obj_property name="ObjectShortName">ce_b[0:1]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/SRAM_MEM/we_b">
+         <obj_property name="ElementShortName">we_b[0:1]</obj_property>
+         <obj_property name="ObjectShortName">we_b[0:1]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/SRAM_MEM/data_in">
+         <obj_property name="ElementShortName">data_in[0:1][31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_in[0:1][31:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/SRAM_MEM/addr_in">
+         <obj_property name="ElementShortName">addr_in[0:1][2:0]</obj_property>
+         <obj_property name="ObjectShortName">addr_in[0:1][2:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/SRAM_MEM/data_out">
+         <obj_property name="ElementShortName">data_out[0:1][31:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out[0:1][31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/bitonic_sort_tb/clk_tb">
+         <obj_property name="ElementShortName">clk_tb</obj_property>
+         <obj_property name="ObjectShortName">clk_tb</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/SRAM_MEM/SRAM_MEM">
+         <obj_property name="ElementShortName">SRAM_MEM[0:4][31:0]</obj_property>
+         <obj_property name="ObjectShortName">SRAM_MEM[0:4][31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/SRAM_MEM/PORTS">
+         <obj_property name="ElementShortName">PORTS[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PORTS[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/SRAM_MEM/DEPTH">
+         <obj_property name="ElementShortName">DEPTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DEPTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/SRAM_MEM/WIDTH">
+         <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/bitonic_sort_tb/SRAM_MEM/SYNCH">
+         <obj_property name="ElementShortName">SYNCH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">SYNCH[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
