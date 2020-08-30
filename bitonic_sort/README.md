@@ -1,7 +1,4 @@
-<pre> 
-2. Bitonic Sort:
-</pre>
-https://github.com/ritviknk/worksample/tree/master/bitonic_sort/Docs
+Bitonic Sort : https://github.com/ritviknk/worksample/tree/master/bitonic_sort/Docs
 <pre>
    Problem statement : Design a sorting module that can sort in ascending order large arrays of up to 
                        1024 elements(signed and unsigned : integers, fixedpoint, floting point), with 
