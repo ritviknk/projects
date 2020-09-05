@@ -23,6 +23,4 @@ Bitonic Sort : https://github.com/ritviknk/worksample/tree/master/bitonic_sort/D
    - Space complexity : O(K) = O(R*S)
       No of pipe stages                                              = S (fixed to 3 in design)
       No of buffers in each stage                                    = R (fixed to 4 in design)
-      
-** TODO : compare functions for signed integer, signed and unsigned fixed point, floting point numbers **
 </pre>   
