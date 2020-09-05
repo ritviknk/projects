@@ -1,7 +1,7 @@
 /****************************************************************
 * File name     : bitonic_sort.sv
 * Creation date : 08-08-2020
-* Last modified : Sat 29 Aug 2020 02:16:50 PM MDT
+* Last modified : Sat 05 Sep 2020 03:57:17 PM MDT
 * Author        : Ritvik Nadig Krishnmurthy
 * Description   :
   *
@@ -21,8 +21,14 @@ module bitonic_sort #(
   parameter TYPE    = 0       // 0 - unsigned integer
                               // 1 - signed integer
                               // 2 - signed fixed point
-                              // 3 - signed floating point
-)(                          
+                              // 3 - signed floating point 
+                              // IEEE single precision 32-b floating point representation
+                              // bit 31       : sign
+                              // bits [30:23] : exponent (true exponent = exponent - bias
+                              // bits [22:0]  : mantissa
+                              // real number = (-1)^sign * 2^(exp-bias) * 1.{mantissa}
+)(                            
+                              
   input wire  logic                       clk, 
   input wire  logic                       rstb,
   input wire  logic [WIDTH-1:0][BITS-1:0] unsorted,
@@ -40,6 +46,10 @@ module bitonic_sort #(
 
 localparam MAXRD = MAXCNT/WIDTH;  // max no of reads required to read MAXCNT no of entries
 localparam MAXSTAGE = MAXRD -1;
+
+localparam SIGN_BIT = BITS-1;
+localparam EXP_BIT  = BITS-2;
+localparam MANT_BIT = BITS-10;
 
 // no of entries    = N       = data_count
 // no of stages     = N-1
@@ -351,56 +361,6 @@ always_ff @(posedge clk or negedge rstb)
   else
     sort_valid <= 0;
 
-/******************* Sort4 common tasks ********/
-
-/* Stage0 sorter:
-* sort in alternating ascending and descending order
-* ascending   : 0-1, 4-5, 8-9, 12-13.....
-* descending  : 2-3, 6-7, 10-11, 14-15...
-*/
-task sort4_stage0();
-  /* WIDTH/2 compares with ascending order sort */
-  for(a0=0;a0<WIDTH;a0=a0+4)
-    {uns_s0[a0], uns_s0[a0+1]} = asc_sorter(unsorted[a0], unsorted[a0+1]);
-
-  /* WIDTH/2 compares with descending order sort */
-  for(d0=2;d0<WIDTH;d0=d0+4)
-    {uns_s0[d0], uns_s0[d0+1]} = desc_sorter(unsorted[d0], unsorted[d0+1]);
-endtask
-
-/* Stage1 sorter:
-* sort top half in ascending order, compare even entries with even, odd indexed entries with odd
-* sort bottom half in descending order, compare even entries with even, odd indexed entries with odd
-* ascending   : 0-2, 1-3
-* descending  : 4-6, 5-7
-*/
-task sort4_asc_stage1();
-  /* WIDTH/2 compares with ascending order sort */
-  for(a1=0;a1<WIDTH/2;a1=a1+1)
-    {uns_s1[a1], uns_s1[a1+WIDTH/2]} = asc_sorter(uns_s0[a1], uns_s0[a1+WIDTH/2]);
-endtask
-
-/* 4 entries are read every clock, so bottom sorter will still index 0:3 */
-task sort4_desc_stage1();
-  /* WIDTH/2 compares with descending order sort */
-  for(a1=0;a1<WIDTH/2;a1=a1+1)
-    {uns_s1[a1], uns_s1[a1+WIDTH/2]} = desc_sorter(uns_s0[a1], uns_s0[a1+WIDTH/2]);
-endtask
-
-/* Stage2 sorter:
-* sort top half in ascending order, compare even entries with odd
-* sort bottom half in descending order, compare even entries with odd
-*/
-task sort4_asc_stage2();
-  for(a2=0;a2<WIDTH;a2=a2+2)
-    {uns_s2[a2], uns_s2[a2+1]} = asc_sorter(uns_s1[a2], uns_s1[a2+1]);
-endtask
-
-/* 4 entries are read every clock, so bottom sorter will still index 0:3 */
-task sort4_desc_stage2();
-  for(a2=0;a2<WIDTH;a2=a2+2)
-    {uns_s2[a2], uns_s2[a2+1]} = desc_sorter(uns_s1[a2], uns_s1[a2+1]);
-endtask
 
 /************** Common Functions ****************/
 
@@ -409,9 +369,66 @@ endtask
 function logic [1:0][BITS-1:0] asc_sorter(
   input logic [BITS-1:0] uns0, 
   input logic [BITS-1:0] uns1);
-        logic cmp;
+        logic            cmp; // 1- uns0 win1
+                              // 0- uns1 wins
 
-  cmp         = (uns0 > uns1);
+// unsigned integer
+  if(TYPE==0) begin
+    cmp       = (uns0 > uns1);
+  end 
+
+// signed integer or fixed point
+  else if (TYPE==1 || TYPE==2) begin
+
+    // same signs, simple magnitude compare
+    if(uns0[BITS-1] ^ uns1[BITS-1]) 
+      cmp = (uns0[BITS-2:0]>uns1[BITS-2:0]);
+
+    // different signs, +ve number wins
+    else
+      cmp = uns1[BITS-2:0];
+  
+  end
+
+// signed floating point
+  else if (TYPE==3) begin
+
+    logic cmp_exp_0, cmp_exp_1, cmp_mant_0;
+
+    /* 
+    * step 1: check for sign
+    * if signs are different, +ve number wins
+      *
+    * If signs are same:
+    * step 2: check for exponent
+    * larger exponent wins
+    *
+    * If exponents are same:
+    * step 3: check for manitssa
+    * larger mantissa wins
+    */
+    case({uns1[BITS-1], uns0[BITS-1]})
+      // different signs, +ve number wins
+      2'b01: cmp = 0;
+      2'b10: cmp = 1;
+
+      // same signs, priority order magnitude compare
+      // exp magnitude compare
+      // mantissa magnitude compare
+      2'b00,
+      2'b11:
+                  if (cmp_exp_0)  cmp = 1;  // uns0 exp > uns1 exp, uns0 wins
+             else if (cmp_exp_1)  cmp = 0;  // uns0 exp < uns1 exp, uns1 wins
+             else if (cmp_mant_0) cmp = 1;  // uns0 exp == uns1 exp, uns0 mant > uns1 mant , uns0 wins
+             else                 cmp = 0;  // uns0 exp == uns1 exp, uns0 mant ~> uns1 mant , uns1 wins
+    endcase
+
+    cmp_exp_0     = uns0[EXP_BIT:MANT_BIT+1]  >  uns1[EXP_BIT:MANT_BIT+1];
+    cmp_exp_1     = uns0[EXP_BIT:MANT_BIT+1]  < uns1[EXP_BIT:MANT_BIT+1];
+    cmp_mant_0    = uns0[MANT_BIT:0]          >  uns1[MANT_BIT:0];
+
+  end
+
   asc_sorter  = cmp ? {uns0, uns1} : {uns1, uns0};
 endfunction
 
@@ -420,10 +437,14 @@ endfunction
 function logic [1:0][BITS-1:0] desc_sorter(
   input logic [BITS-1:0] uns0, 
   input logic [BITS-1:0] uns1);
-        logic cmp;
 
-  cmp         = (uns0 > uns1);
-  desc_sorter = ~cmp ? {uns0, uns1} : {uns1, uns0};
+  logic [1:0][BITS-1:0] asc_sort;
+
+  // reuse ascending sorter and reverse byte order
+  asc_sort = asc_sorter(uns0, uns1);
+  for(int i= 0;i<2;i++)
+    desc_sorter[i] = asc_sort[1-i];
+
 endfunction
 
 endmodule

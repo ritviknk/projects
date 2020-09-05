@@ -1,7 +1,7 @@
 /****************************************************************
 * File name     : bitonic_sort_tb.sv
 * Creation date : 08-08-2020
-* Last modified : Sat 29 Aug 2020 06:48:15 PM MDT
+* Last modified : Sat 05 Sep 2020 04:08:20 PM MDT
 * Author        : Ritvik Nadig Krishnmurthy
 * Description   :
 *****************************************************************/
@@ -133,11 +133,11 @@ always_ff @(posedge clk_tb)
     cnt             <= cnt + 1;
 
     // assert sort request for one cycle
-    if(~sort_req_in && cnt < DATA_CNT_TB*(DATA_CNT_TB-1)-1) begin
+    if(~sort_req_in && cnt <= DATA_CNT_TB+10) begin
       sort_req_in   <= 1;
       start_addr_in <= START_ADDR_TB;
     end
-    else if (cnt > DATA_CNT_TB + 10 /*DATA_CNT_TB*(DATA_CNT_TB-1) + DATA_CNT_TB + 10*/)
+    else if (sort_req_in && cnt > DATA_CNT_TB + 20 /*DATA_CNT_TB*(DATA_CNT_TB-1) + DATA_CNT_TB + 10*/)
       sort_req_in   <= 0;
 
   end
