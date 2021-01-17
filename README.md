@@ -1,4 +1,5 @@
 RTL design projects to showcase design skills, verilog language expertise and coding styles.
+
 # projects/current : Current projects under development.
 # projects/archive : Archive/completed projects.
 
