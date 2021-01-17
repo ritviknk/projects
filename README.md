@@ -5,7 +5,7 @@ RTL design projects to showcase design skills, verilog language expertise and co
 <pre>
 1. Network Packet Decoder(Message Extractor):
 </pre>
-https://github.com/ritviknk/projects/archive/tree/master/network_packet_decoder/Docs
+https://github.com/ritviknk/projects/tree/master/archive/network_packet_decoder/Docs
 <pre>
    Problem statement : Design a verilog module to extract message payloads with variable lengths 
                        from a continuous stream of packets. 
@@ -19,7 +19,7 @@ https://github.com/ritviknk/projects/archive/tree/master/network_packet_decoder/
 <pre> 
 2. Bitonic Sort:
 </pre>
-https://github.com/ritviknk/projects/archive/tree/master/bitonic_sort/Docs
+https://github.com/ritviknk/projects/tree/master/archive/bitonic_sort/Docs
 <pre>
    Problem statement : Design a sorting module that can sort in ascending order large arrays of up to 
                        1024 elements(signed and unsigned : integers, fixedpoint, floting point), with 
@@ -53,7 +53,7 @@ https://github.com/ritviknk/projects/archive/tree/master/bitonic_sort/Docs
 <pre>
 3. FIFO:
 </pre>
-https://github.com/ritviknk/projects/archive/tree/master/fifo_sram/Docs
+https://github.com/ritviknk/projects/tree/master/archive/fifo_sram/Docs
 <pre>
    Problem statement : Design a FIFO with pre-fetch buffer using SRAM model.
    Design: FSM, Synchronous FIFO
