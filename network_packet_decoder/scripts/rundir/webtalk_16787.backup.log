@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Jul 18 21:23:35 2021
+# Process ID: 16787
+# Current directory: /media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/design/pckt_decoder/scripts/rundir
+# Command line: wbtcv -mode batch -source /media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/design/pckt_decoder/scripts/rundir/xsim.dir/defaultlib.pckt_decoder_top_tb/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/design/pckt_decoder/scripts/rundir/webtalk.log
+# Journal file: /media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/design/pckt_decoder/scripts/rundir/webtalk.jou
+#-----------------------------------------------------------
+source /media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/design/pckt_decoder/scripts/rundir/xsim.dir/defaultlib.pckt_decoder_top_tb/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/design/pckt_decoder/scripts/rundir/xsim.dir/defaultlib.pckt_decoder_top_tb/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Jul 18 21:23:36 2021. For additional details about this file, please refer to the WebTalk help file at /media/ritvik/Storage_SamsungSSD_500GB/projects/installs/Vivado/Vivado/2021.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Jul 18 21:23:36 2021...

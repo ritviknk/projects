@@ -1,0 +1,12 @@
+
+{ 
+    crc :  3340333664242178251  , 
+    ccp_crc :  0  , 
+    cmdline : " defaultlib.bitonic_sort_tb --relax --incr --debug typical -L defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot defaultlib.bitonic_sort_tb" , 
+    buildDate : "Jun 10 2021" , 
+    buildTime : "19:45:28" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/defaultlib.bitonic_sort_tb/xsimk\"   \"xsim.dir/defaultlib.bitonic_sort_tb/obj/xsim_0.lnx64.o\" \"xsim.dir/defaultlib.bitonic_sort_tb/obj/xsim_1.lnx64.o\" -L\"/media/ritvik/Storage_SamsungSSD_500GB/projects/installs/Vivado/Vivado/2021.1/lib/lnx64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

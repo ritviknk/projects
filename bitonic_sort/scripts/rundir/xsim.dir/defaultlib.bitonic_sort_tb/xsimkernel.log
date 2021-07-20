@@ -1,0 +1,7 @@
+Running: xsim.dir/defaultlib.bitonic_sort_tb/xsimk -wdb ../logs/bitonic_sort_tb.wdb -simmode gui -simrunnum 0 -socket 48887
+Design successfully loaded
+Design Loading Memory Usage: 35064 KB (Peak: 35184 KB)
+Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 117320 KB (Peak: 174332 KB)
+Simulation CPU Usage: 300 ms

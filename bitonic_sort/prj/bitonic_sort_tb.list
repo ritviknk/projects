@@ -1,0 +1,2 @@
+../../../sram/rtl/sram.sv
+../../../bitonic_sort/tb/bitonic_sort_tb.sv

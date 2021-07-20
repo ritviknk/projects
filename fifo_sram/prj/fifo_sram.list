@@ -1,0 +1,2 @@
+../../../sram/rtl/sram.sv
+../../../fifo_sram/rtl/fifo_sram.sv

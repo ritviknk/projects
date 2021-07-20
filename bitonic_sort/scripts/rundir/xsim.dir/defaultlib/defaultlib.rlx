@@ -1,0 +1,8 @@
+0.7
+2020.2
+Jun 10 2021
+19:45:28
+/media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/bitonic_sort/rtl/bitonic_sort.sv,1626764082,systemVerilog,,/media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/sram/rtl/sram.sv,,bitonic_sort,,,,,,,,
+/media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/bitonic_sort/tb/bitonic_sort_tb.sv,1626764505,systemVerilog,,,,bitonic_sort_tb,,,,,,,,
+/media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/common_pkg/tb/common_lib_tb.sv,1626764982,systemVerilog,,/media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/bitonic_sort/rtl/bitonic_sort.sv,,tb_clk_rst,,,,,,,,
+/media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/sram/rtl/sram.sv,1610868400,systemVerilog,,/media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/bitonic_sort/tb/bitonic_sort_tb.sv,,sram,,,,,,,,

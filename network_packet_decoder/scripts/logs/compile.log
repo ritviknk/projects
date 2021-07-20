@@ -1,0 +1,13 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/common_pkg/tb/common_lib_tb.sv" into library defaultlib
+INFO: [VRFC 10-311] analyzing module tb_clk_rst
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/sram/rtl/sram.sv" into library defaultlib
+INFO: [VRFC 10-311] analyzing module sram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/fifo_sram/rtl/fifo_sram.sv" into library defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_sram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/network_packet_decoder/rtl/pckt_decoder_top.sv" into library defaultlib
+INFO: [VRFC 10-311] analyzing module pckt_decoder_top
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [/media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/network_packet_decoder/rtl/pckt_decoder_top.sv:96]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/network_packet_decoder/rtl/pckt_decoder.sv" into library defaultlib
+INFO: [VRFC 10-311] analyzing module pckt_decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/network_packet_decoder/tb/pckt_decoder_top_tb.sv" into library defaultlib
+INFO: [VRFC 10-311] analyzing module pckt_decoder_top_tb

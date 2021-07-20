@@ -1,0 +1,4 @@
+../../../sram/rtl/sram.sv
+../../../fifo_sram/rtl/fifo_sram.sv
+../../rtl/pckt_decoder_top.sv
+../../rtl/pckt_decoder.sv

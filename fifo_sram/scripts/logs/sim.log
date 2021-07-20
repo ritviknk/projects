@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# xsim v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Jul 20 00:11:31 2021
+# Process ID: 12460
+# Current directory: /media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/fifo_sram/scripts/rundir
+# Command line: xsim -log ../logs/sim.log -mode tcl -source {xsim.dir/defaultlib.fifo_sram_tb/xsim_script.tcl}
+# Log file: /media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/fifo_sram/scripts/rundir/../logs/sim.log
+# Journal file: /media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/fifo_sram/scripts/rundir/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/defaultlib.fifo_sram_tb/xsim_script.tcl
+# xsim {defaultlib.fifo_sram_tb} -wdb {../logs/fifo_sram_tb.wdb} -autoloadwcfg -tclbatch {../../prj/runsim.tcl} -onfinish stop
+Time resolution is 1 ps
+source ../../prj/runsim.tcl
+## package require cmdline
+## set parameters {
+##   {view.arg "nowavesdb"   "which static waves to view"}
+##   {run                    "run sim"}
+## }
+## set usage "-run : to run sims . -view <waves.db> to view static waves"
+## array set options [cmdline::getoptions ::argv $parameters $usage] 
+## parray options
+options(run)  = 0
+options(view) = nowavesdb
+## set top $::env(TOP_MODULE)
+## proc run_sim {top} {
+##   puts "run_sim called"
+##   set_param simulator.quitOnSimulationComplete 0
+##   log_wave -r / 
+##   run all
+##   quit  
+## }
+## proc view_sim {wdb} {
+##   puts "view_sim called"
+##   open_wave_database $wdb
+## #  open_wave_config $wcfg
+## }
+## if {$options(run)==1} {
+##   puts "Running xsim"
+##   run_sim $top
+## } elseif {$options(view) ne "nowavesdb"} {
+##   puts "Opening static database"
+##   view_sim $options(view)
+## } else {
+##   puts "Default option : Running xsim"
+##   run_sim $top
+## }
+Default option : Running xsim
+run_sim called
+$stop called at time : 167 ns : File "/media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/fifo_sram/tb/fifo_sram_tb.sv" Line 64
+INFO: [Common 17-206] Exiting xsim at Tue Jul 20 00:11:39 2021...

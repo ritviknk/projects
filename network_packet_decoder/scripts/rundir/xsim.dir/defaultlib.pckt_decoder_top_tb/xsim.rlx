@@ -1,0 +1,12 @@
+
+{ 
+    crc :  851671451314826124  , 
+    ccp_crc :  0  , 
+    cmdline : " defaultlib.pckt_decoder_top_tb --relax --incr --debug typical -L defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot defaultlib.pckt_decoder_top_tb" , 
+    buildDate : "Jun 10 2021" , 
+    buildTime : "19:45:28" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/defaultlib.pckt_decoder_top_tb/xsimk\"   \"xsim.dir/defaultlib.pckt_decoder_top_tb/obj/xsim_0.lnx64.o\" \"xsim.dir/defaultlib.pckt_decoder_top_tb/obj/xsim_1.lnx64.o\" -L\"/media/ritvik/Storage_SamsungSSD_500GB/projects/installs/Vivado/Vivado/2021.1/lib/lnx64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

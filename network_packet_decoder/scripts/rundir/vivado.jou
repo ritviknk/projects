@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Jul 20 00:12:39 2021
+# Process ID: 12809
+# Current directory: /media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/network_packet_decoder/scripts/rundir
+# Command line: vivado -source ../../prj/runsim.tcl -tclargs -view ../logs/pckt_decoder_top_tb.wdb
+# Log file: /media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/network_packet_decoder/scripts/rundir/vivado.log
+# Journal file: /media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/network_packet_decoder/scripts/rundir/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source ../../prj/runsim.tcl
+close_sim

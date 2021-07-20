@@ -1,0 +1,17 @@
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /media/ritvik/Storage_SamsungSSD_500GB/projects/installs/Vivado/Vivado/2021.1/bin/unwrapped/lnx64.o/xelab defaultlib.bitonic_sort_tb --relax --incr --debug typical -mt auto -L defaultlib -L unisims_ver -L unimacro_ver -L secureip -log ../logs/elab.log --snapshot defaultlib.bitonic_sort_tb 
+Multi-threading is on. Using 30 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/common_pkg/tb/common_lib_tb.sv" Line 9. Module tb_clk_rst(RST_TIME=12) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/common_pkg/tb/common_lib_tb.sv" Line 9. Module tb_clk_rst(RST_TIME=12) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module defaultlib.bitonic_sort(ADDR=10)
+Compiling module defaultlib.sram(PORTS=2,WIDTH=32)
+Compiling module defaultlib.tb_clk_rst(RST_TIME=12)
+Compiling module defaultlib.bitonic_sort_tb
+Built simulation snapshot defaultlib.bitonic_sort_tb

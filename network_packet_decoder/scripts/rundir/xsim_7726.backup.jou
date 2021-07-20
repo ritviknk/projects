@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# xsim v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Jul 19 23:21:51 2021
+# Process ID: 7726
+# Current directory: /media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/design/pckt_decoder/scripts/rundir
+# Command line: xsim -log ../logs/sim.log -mode tcl -source {xsim.dir/defaultlib.pckt_decoder_top_tb/xsim_script.tcl}
+# Log file: /media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/design/pckt_decoder/scripts/rundir/../logs/sim.log
+# Journal file: /media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/design/pckt_decoder/scripts/rundir/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/defaultlib.pckt_decoder_top_tb/xsim_script.tcl
+source ../../prj/runsim.tcl

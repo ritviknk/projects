@@ -1,0 +1,7 @@
+Running: xsim.dir/defaultlib.fifo_sram_tb/xsimk -wdb ../logs/fifo_sram_tb.wdb -simmode gui -simrunnum 0 -socket 34869
+Design successfully loaded
+Design Loading Memory Usage: 35004 KB (Peak: 35124 KB)
+Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 117260 KB (Peak: 174272 KB)
+Simulation CPU Usage: 10 ms

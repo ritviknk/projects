@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Jul 19 23:22:02 2021
+# Process ID: 7821
+# Current directory: /media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/design/pckt_decoder/scripts/rundir
+# Command line: vivado -source ../../prj/runsim.tcl -tclargs -view ../logs/pckt_decoder_top_tb.wdb
+# Log file: /media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/design/pckt_decoder/scripts/rundir/vivado.log
+# Journal file: /media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/design/pckt_decoder/scripts/rundir/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source ../../prj/runsim.tcl
+# package require cmdline
+# set parameters {
+#   {view.arg "nowavesdb"   "which static waves to view"}
+#   {run                    "run sim"}
+# }
+# set usage "-run : to run sims . -view <waves.db> to view static waves"
+# array set options [cmdline::getoptions ::argv $parameters $usage] 
+# parray options
+options(run)  = 0
+options(view) = ../logs/pckt_decoder_top_tb.wdb
+# set top $::env(TOP_MODULE)
+# proc run_sim {top} {
+#   puts "run_sim called"
+#   set_param simulator.quitOnSimulationComplete 0
+#   log_wave -r / 
+#   run all
+#   quit  
+# }
+# proc view_sim {wdb} {
+#   puts "view_sim called"
+#   open_wave_database $wdb
+#   open_wave_config ../../prj/pckt_decoder_top_tb.wcfg
+# }
+# if {$options(run)==1} {
+#   puts "Running xsim"
+#   run_sim $top
+# } elseif {$options(view) ne "nowavesdb"} {
+#   puts "Opening static database"
+#   view_sim $options(view)
+# } else {
+#   puts "Default option : Running xsim"
+#   run_sim $top
+# }
+Opening static database
+view_sim called
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/media/ritvik/Storage_SamsungSSD_500GB/projects/installs/Vivado/Vivado/2021.1/data/ip'.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 19 23:26:51 2021...

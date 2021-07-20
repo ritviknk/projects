@@ -1,0 +1,1 @@
+"defaultlib.pckt_decoder_top_tb" --relax --incr --debug "typical" -mt "auto" -L "defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -log "../logs/elab.log" --snapshot "defaultlib.pckt_decoder_top_tb" 

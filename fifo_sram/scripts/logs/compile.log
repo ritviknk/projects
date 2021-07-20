@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/common_pkg/tb/common_lib_tb.sv" into library defaultlib
+INFO: [VRFC 10-311] analyzing module tb_clk_rst
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/sram/rtl/sram.sv" into library defaultlib
+INFO: [VRFC 10-311] analyzing module sram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/fifo_sram/rtl/fifo_sram.sv" into library defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_sram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/fifo_sram/tb/fifo_sram_tb.sv" into library defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_sram_tb
+WARNING: [VRFC 10-3380] identifier 'test_end' is used before its declaration [/media/ritvik/Storage_SamsungSSD_500GB/projects/HDL/publish/fifo_sram/tb/fifo_sram_tb.sv:63]

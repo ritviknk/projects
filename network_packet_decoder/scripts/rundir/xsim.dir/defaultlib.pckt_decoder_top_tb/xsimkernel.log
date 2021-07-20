@@ -1,0 +1,7 @@
+Running: xsim.dir/defaultlib.pckt_decoder_top_tb/xsimk -wdb ../logs/pckt_decoder_top_tb.wdb -simmode gui -simrunnum 0 -socket 36839
+Design successfully loaded
+Design Loading Memory Usage: 35076 KB (Peak: 35196 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 117332 KB (Peak: 174344 KB)
+Simulation CPU Usage: 10 ms
